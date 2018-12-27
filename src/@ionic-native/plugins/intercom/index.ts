@@ -155,5 +155,12 @@ export class Intercom extends IonicNativePlugin {
    */
   @Cordova()
   registerForPush(): Promise<any> { return; }
-
+  
+  /**
+   *
+   * @return {Promise<any>} Returns a promise
+   */
+  @Cordova()
+  sendPushTokenToIntercom(token: string): Promise<any> { return; }
+  
 }
